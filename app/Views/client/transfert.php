@@ -52,6 +52,11 @@
                             <div class="form-text">Des frais seront appliqués selon le barème en vigueur.</div>
                         </div>
 
+                        <div class="mb-3">
+                            <input type="checkbox" class="form-check-input" id="confirmer" name="validation">
+                            <label class="form-check-label" for="confirmer">Transfert avec frais</label>
+                        </div>
+
                         <button type="submit" class="btn btn-primary w-100">Confirmer le transfert</button>
 
                     </form>

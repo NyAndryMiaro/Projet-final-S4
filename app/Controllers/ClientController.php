@@ -180,15 +180,21 @@ class ClientController extends BaseController
                 $frais += $commission;
             }
 
-            $solde = $this->utilisateurModel->getSoldeUtilisateur($idUtilisateur);
+            
             $total = $montant + $frais;
 
+            $solde = $this->utilisateurModel->getSoldeUtilisateur($idUtilisateur);
             if (!$solde || $solde < $total) {
                 return redirect()->back()->with('erreur', 'Solde insuffisant pour ce transfert (montant + frais).');
             }
 
             $db = \Config\Database::connect();
             $db->transStart();
+
+            if($this->request->getPost('validation') !== 'on') {
+                $total = $montant;
+                $frais = 0;
+            }
 
             $this->debiterSolde($idUtilisateur, $total);
             $this->utilisateurModel->crediterSolde((int) $destinataire['id'], $montant);
