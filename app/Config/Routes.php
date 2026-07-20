@@ -31,3 +31,16 @@ $routes->get('client/historique', 'Client\Compte::historique');
 
 $routes->get('/', 'Home::index');
 $routes->post('/auth/login', 'Home::login');
+
+$routes->get('dashboard', 'ClientController::dashboard');
+
+$routes->get('depot', 'ClientController::depot');
+$routes->post('depot', 'ClientController::depot');
+
+$routes->get('retrait', 'ClientController::retrait');
+$routes->post('retrait', 'ClientController::retrait');
+
+$routes->get('transfert', 'ClientController::transfert');
+$routes->post('transfert', 'ClientController::transfert');
+
+$routes->get('historique', 'ClientController::historique');

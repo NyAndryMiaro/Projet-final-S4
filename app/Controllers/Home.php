@@ -20,12 +20,12 @@ class Home extends BaseController
         //     return redirect()->back()->with('erreur', 'Le numéro de téléphone n\'est pas valide.');
         // }
 
-        $utilisateur = $utilisateurModel->findByNumero($numero);
+        // $utilisateur = $utilisateurModel->findByNumero($numero);
 
-        if (!$utilisateur) {
-            $utilisateurId = $utilisateurModel->creerClient($numero);
-            $utilisateur = $utilisateurModel->find($utilisateurId);
-        }
+        // if (!$utilisateur) {
+        //     $utilisateurId = $utilisateurModel->creerClient($numero);
+        //     $utilisateur = $utilisateurModel->find($utilisateurId);
+        // }
 
         // session()->set('utilisateur', $utilisateur);
 
