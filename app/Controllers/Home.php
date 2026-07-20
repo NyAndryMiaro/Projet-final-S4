@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\PrefixeOperateurModel;
+use App\Models\UtilisateurModel;
+
 class Home extends BaseController
 {
     public function index(): string

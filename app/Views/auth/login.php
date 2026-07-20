@@ -35,6 +35,10 @@
             <p class="text-muted text-center mt-3" style="font-size: 0.85rem;">
                 Si votre numero n'est pas encore enregistre, un compte sera creer automatiquement.
             </p>
+
+            <button type="submit" class="btn btn-primary w-100"><a href="<?= site_url('operateur/dashboard') ?>" class="btn w-100 mt-2">Connexion opérateur</a></button>
+           
+            </button>
         </div>
     </div>
 </div>
