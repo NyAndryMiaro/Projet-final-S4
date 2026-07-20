@@ -20,6 +20,16 @@ class UtilisateurModel extends Model
     ];
 
     protected $useTimestamps = false;
+
+    public function rechercheParNumero(?string $numero = null): array
+    {
+        if ($numero === null || trim($numero) === '') {
+            return $this->findAll();
+        }
+
+        return $this->like('numero', $numero)->findAll();
+    }
+
     public function findByNumero(string $numero): ?array
     {
         return $this->where('numero', $numero)->first();

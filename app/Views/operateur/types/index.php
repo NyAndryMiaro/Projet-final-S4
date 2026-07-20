@@ -3,6 +3,10 @@
 
 <h2 class="mb-4">Types d'opération</h2>
 
+<?php if (! empty($error)) : ?>
+    <div class="alert alert-danger"><?= esc($error) ?></div>
+<?php endif; ?>
+
 <table class="table table-bordered bg-white" style="max-width:500px;">
     <thead><tr><th>#</th><th>Nom</th></tr></thead>
     <tbody>

@@ -2,25 +2,40 @@
 
 use CodeIgniter\Router\RouteCollection;
 
+
+
 /**
  * @var RouteCollection $routes
  */
 
-$routes->get('operateur/dashboard', 'Operateur\Dashboard::index');
+$routes->GET('operateur/dashboard', 'Dashboard::index');
 
-$routes->get('operateur/prefixes', 'Operateur\Prefixes::index');
-$routes->match(['GET','POST'], 'operateur/prefixes/create', 'Operateur\Prefixes::create');
-$routes->match(['GET','POST'], 'operateur/prefixes/edit/(:num)', 'Operateur\Prefixes::edit/$1');
-$routes->get('operateur/prefixes/delete/(:num)', 'Operateur\Prefixes::delete/$1');
+$routes->GET('operateur/prefixes', 'Prefixes::index');
+$routes->GET('operateur/prefixes/create', 'Prefixes::create');
+$routes->POST('operateur/prefixes/create', 'Prefixes::create');
+$routes->GET('operateur/prefixes/edit/(:num)', 'Prefixes::edit/$1');
+$routes->POST('operateur/prefixes/edit/(:num)', 'Prefixes::edit/$1');
+$routes->GET('operateur/prefixes/delete/(:num)', 'Prefixes::delete/$1');
 
-$routes->get('operateur/types', 'Operateur\TypesOperation::index');
-$routes->get('operateur/types/baremes', 'Operateur\TypesOperation::baremes');
-$routes->match(['GET','POST'], 'operateur/types/baremes/add', 'Operateur\TypesOperation::addBareme');
-$routes->match(['GET','POST'], 'operateur/types/baremes/edit/(:num)', 'Operateur\TypesOperation::editBareme/$1');
-$routes->get('operateur/types/baremes/delete/(:num)', 'Operateur\TypesOperation::deleteBareme/$1');
+$routes->GET('operateur/types', 'TypesOperation::index');
+$routes->GET('operateur/types/baremes', 'TypesOperation::baremes');
+$routes->GET('operateur/types/baremes/add', 'TypesOperation::addBareme');
+$routes->POST('operateur/types/baremes/add', 'TypesOperation::addBareme');
+$routes->GET('operateur/types/baremes/edit/(:num)', 'TypesOperation::editBareme/$1');
+$routes->POST('operateur/types/baremes/edit/(:num)', 'TypesOperation::editBareme/$1');
+$routes->GET('operateur/types/baremes/delete/(:num)', 'TypesOperation::deleteBareme/$1');
 
-$routes->get('operateur/comptes', 'Operateur\Comptes::index');
+$routes->GET('operateur/comptes', 'Comptes::index');
 
+
+$routes->GET('client/compte', 'Compte::index');
+$routes->GET('client/depot', 'Compte::depot');
+$routes->POST('client/depot', 'Compte::depot');
+$routes->GET('client/retrait', 'Compte::retrait');
+$routes->POST('client/retrait', 'Compte::retrait');
+$routes->GET('client/transfert', 'Compte::transfert');
+$routes->POST('client/transfert', 'Compte::transfert');
+$routes->GET('client/historique', 'Compte::historique');
 $routes->match(['GET','POST'], 'client/login', 'Client\Auth::login');
 $routes->get('client/logout', 'Client\Auth::logout');
 $routes->get('client/compte', 'Client\Compte::index');
