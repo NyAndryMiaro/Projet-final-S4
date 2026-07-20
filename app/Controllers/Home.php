@@ -19,7 +19,7 @@ class Home extends BaseController
         $numero = $this->request->getPost('numero');
 
         // if (!$prefixeModel->numeroEstValide($numero)) {
-        //     return redirect()->back()->withInput()->with('erreur', 'Le numéro de téléphone n\'est pas valide.');
+        //     return redirect()->back()->with('erreur', 'Le numéro de téléphone n\'est pas valide.');
         // }
 
         $utilisateur = $utilisateurModel->findByNumero($numero);

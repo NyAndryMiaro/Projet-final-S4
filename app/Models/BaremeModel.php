@@ -37,7 +37,7 @@ class BaremeModel extends Model
             throw new \RuntimeException("Aucun barème trouvé pour ce montant.");
         }
 
-        return (float) $tranche['frais'];
+        return (float) $tranche['valeur'];
     }
 
     public function getFraisPourMontant(float $montant): float

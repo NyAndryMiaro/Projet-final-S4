@@ -523,3 +523,378 @@ in APPPATH/Controllers/ClientController.php on line 252.
  8 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
 DEBUG - 2026-07-20 12:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-07-20 12:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 13:09:52 --> Unable to prepare statement: no such column: born_inf
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:09:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such column: born_inf
+[Method: POST, Route: transfert]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:09:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such column: born_inf
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:09:52 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such column: born_inf
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 13:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 13:11:32 --> Unable to prepare statement: no such column: born_inf
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:11:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such column: born_inf
+[Method: POST, Route: transfert]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:11:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such column: born_inf
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:11:32 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such column: born_inf
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 13:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 13:12:20 --> Unable to prepare statement: no such column: born_inf
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:12:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such column: born_inf
+[Method: POST, Route: transfert]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:12:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such column: born_inf
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:12:20 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such column: born_inf
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/BaremeModel.php(47): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/ClientController.php(174): App\Models\BaremeModel->getFraisPourMontant()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 13:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 13:16:32 --> ErrorException: Undefined array key "frais"
+[Method: POST, Route: transfert]
+in APPPATH/Models/BaremeModel.php on line 40.
+ 1 APPPATH/Models/BaremeModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/ClientController.php(173): App\Models\BaremeModel->calculerFrais()
+ 3 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 13:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 13:18:51 --> ErrorException: Undefined array key "pourcentage"
+[Method: POST, Route: transfert]
+in APPPATH/Controllers/ClientController.php on line 177.
+ 1 APPPATH/Controllers/ClientController.php(177): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 13:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 13:19:15 --> ErrorException: Undefined array key 0
+[Method: POST, Route: transfert]
+in APPPATH/Controllers/ClientController.php on line 177.
+ 1 APPPATH/Controllers/ClientController.php(177): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 13:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 13:21:44 --> Unable to prepare statement: no such column: pourcentage
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/UtilisateurModel.php(67): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/ClientController.php(176): App\Models\UtilisateurModel->getCommission()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:21:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such column: pourcentage
+[Method: POST, Route: transfert]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/UtilisateurModel.php(67): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/ClientController.php(176): App\Models\UtilisateurModel->getCommission()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:21:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such column: pourcentage
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/UtilisateurModel.php(67): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/ClientController.php(176): App\Models\UtilisateurModel->getCommission()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 13:21:44 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such column: pourcentage
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/UtilisateurModel.php(67): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/ClientController.php(176): App\Models\UtilisateurModel->getCommission()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->transfert()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 13:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

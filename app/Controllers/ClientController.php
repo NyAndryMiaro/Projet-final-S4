@@ -163,13 +163,22 @@ class ClientController extends BaseController
                 return redirect()->back()->with('erreur', 'Vous ne pouvez pas vous transférer à vous-même.');
             }
 
+        
             $idTypeOperation = $this->idTypeOperationParNom('transfert');
 
             if (!$idTypeOperation) {
                 return redirect()->back()->with('erreur', 'Type d\'opération transfert introuvable.');
             }
 
-            $frais = $this->baremeModel->getFraisPourMontant($montant);
+            $frais = $this->baremeModel->calculerFrais(3 ,$montant);
+
+            if($this->prefixeModel->verifierDeuxPrefixes(session()->get('numero'), $numeroDestinataire) == false) {
+                $tab = $this->utilisateurModel->getCommission();
+                $pourcentage = $tab;
+                if($pourcentage < 1) $pourcentage = 1;
+                $commission = $frais * ($pourcentage / 100);
+                $frais += $commission;
+            }
 
             $solde = $this->utilisateurModel->getSoldeUtilisateur($idUtilisateur);
             $total = $montant + $frais;
