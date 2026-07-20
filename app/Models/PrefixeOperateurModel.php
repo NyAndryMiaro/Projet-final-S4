@@ -32,4 +32,12 @@ class PrefixeOperateurModel extends Model
 
         return in_array($prefixe, $this->getPrefixesValables(), true);
     }
+
+    public function verifierDeuxPrefixes($num1, $num2) : bool
+    {
+        $prefixe1 = substr($num1, 0, 3);
+        $prefixe2 = substr($num2, 0, 3);
+
+        return $prefixe1 === $prefixe2;
+    }
 }

@@ -58,4 +58,6 @@ $routes->post('retrait', 'ClientController::retrait');
 $routes->get('transfert', 'ClientController::transfert');
 $routes->post('transfert', 'ClientController::transfert');
 
+$routes->match(['GET','POST'], 'transfert-multiple', 'ClientController::transfertMultiple');
+
 $routes->get('historique', 'ClientController::historique');

@@ -6,6 +6,7 @@ use App\Models\BaremeModel;
 use App\Models\OperationModel;
 use App\Models\TypeOperationModel;
 use App\Models\UtilisateurModel;
+use App\Models\PrefixeOperateurModel;
 
 class ClientController extends BaseController
 {
@@ -13,6 +14,7 @@ class ClientController extends BaseController
     protected TypeOperationModel $typeOperationModel;
     protected BaremeModel $baremeModel;
     protected UtilisateurModel $utilisateurModel;
+    protected PrefixeOperateurModel $prefixeModel;
 
     public function __construct()
     {
@@ -20,6 +22,7 @@ class ClientController extends BaseController
         $this->typeOperationModel = new TypeOperationModel();
         $this->baremeModel        = new BaremeModel();
         $this->utilisateurModel   = new UtilisateurModel();
+        $this->prefixeModel       = new PrefixeOperateurModel();
     }
 
     private function idUtilisateurConnecte(): int
@@ -197,6 +200,110 @@ class ClientController extends BaseController
         }
 
         return view('client/transfert');
+    }
+
+    public function transfertMultiple()
+    {
+        if ($this->request->getMethod() !== 'POST') {
+            return redirect()->to('/transfert');
+        }
+
+        $montantTotal = (float) $this->request->getPost('montant_total');
+        $numerosBrut  = $this->request->getPost('numeros') ?? [];
+
+        $numeros = array_values(array_filter(array_map('trim', $numerosBrut), static fn ($n) => $n !== ''));
+
+        if ($montantTotal <= 0) {
+            return redirect()->back()->withInput()->with('erreur', 'Montant total invalide.');
+        }
+
+        if (count($numeros) < 2) {
+            return redirect()->back()->withInput()->with('erreur', 'Veuillez saisir au moins 2 numéros pour un envoi multiple.');
+        }
+
+        if (count($numeros) !== count(array_unique($numeros))) {
+            return redirect()->back()->withInput()->with('erreur', 'Un même numéro a été saisi plusieurs fois.');
+        }
+
+        $idUtilisateur  = $this->idUtilisateurConnecte();
+        $numeroEnvoyeur = session()->get('numero');
+
+        $nbDestinataires = count($numeros);
+
+        $montantParDestinataire = floor($montantTotal / $nbDestinataires);
+
+        if ($montantParDestinataire <= 0) {
+            return redirect()->back()->withInput()->with('erreur', 'Le montant total est trop faible pour être réparti entre tous les destinataires.');
+        }
+
+        $idTypeOperation = $this->idTypeOperationParNom('transfert');
+
+        if (!$idTypeOperation) {
+            return redirect()->back()->with('erreur', "Type d'opération transfert introuvable.");
+        }
+
+        $destinataires = [];
+
+        foreach ($numeros as $numero) {
+            if ($numero === $numeroEnvoyeur) {
+                return redirect()->back()->withInput()->with('erreur', "Vous ne pouvez pas vous inclure vous-même ({$numero}) dans la liste des destinataires.");
+            }
+
+            if (!$this->prefixeModel->verifierDeuxPrefixes($numeroEnvoyeur, $numero)) {
+                return redirect()->back()->withInput()->with('erreur', "Vous essayez de faire un multi transfert avec un autre opérateur."+
+                " ({$numero}). Cette opération n'est pas autorisée.");
+            }
+
+            $utilisateur = $this->utilisateurModel->findByNumero($numero);
+
+            if (!$utilisateur) {
+                return redirect()->back()->withInput()->with('erreur', "Le numéro {$numero} est introuvable.");
+            }
+
+            $destinataires[] = $utilisateur;
+        }
+
+        $fraisParDestinataire = $this->baremeModel->getFraisPourMontant($montantParDestinataire);
+        $coutParDestinataire  = $montantParDestinataire + $fraisParDestinataire;
+        $coutTotal            = $coutParDestinataire * $nbDestinataires;
+
+        $solde = $this->utilisateurModel->getSoldeUtilisateur($idUtilisateur);
+
+        if (!$solde || $solde < $coutTotal) {
+            return redirect()->back()->withInput()->with(
+                'erreur',
+                "Solde insuffisant. Total requis : {$coutTotal} Ar (dont " . ($fraisParDestinataire * $nbDestinataires) . " Ar de frais)."
+            );
+        }
+
+        $db = \Config\Database::connect();
+        $db->transStart();
+
+        $this->debiterSolde($idUtilisateur, $coutTotal);
+
+        foreach ($destinataires as $destinataire) {
+            $this->utilisateurModel->crediterSolde((int) $destinataire['id'], $montantParDestinataire);
+
+            $this->operationModel->insert([
+                'id_type_operation' => $idTypeOperation,
+                'envoyeur'          => $idUtilisateur,
+                'destinataire'      => (int) $destinataire['id'],
+                'valeur'            => $montantParDestinataire,
+                'frais'             => $fraisParDestinataire,
+                'date_operation'    => date('Y-m-d H:i:s'),
+            ]);
+        }
+
+        $db->transComplete();
+
+        if ($db->transStatus() === false) {
+            return redirect()->back()->withInput()->with('erreur', "Une erreur est survenue pendant l'envoi multiple. Aucun montant n'a été débité.");
+        }
+
+        return redirect()->to('/dashboard')->with(
+            'succes',
+            "Envoi multiple effectué : {$montantParDestinataire} Ar envoyés à chacun des {$nbDestinataires} destinataires (frais total : " . ($fraisParDestinataire * $nbDestinataires) . " Ar)."
+        );
     }
 
     public function historique()
