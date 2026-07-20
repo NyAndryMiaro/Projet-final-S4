@@ -1046,3 +1046,138 @@ WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "po
  8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
+DEBUG - 2026-07-20 07:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 07:13:29 --> Error: Call to undefined function form_open()
+[Method: GET, Route: /]
+in APPPATH/Views/auth/login.php on line 21.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Home.php(10): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 07:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 07:19:16 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/asus/Documents/GitHub/Projet-final-S4/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/asus/Documents/GitHub/Projet-final-S4/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/PrefixeOperateurModel.php(22): CodeIgniter\BaseModel->findAll()
+#8 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/PrefixeOperateurModel.php(33): App\Models\PrefixeOperateurModel->getPrefixesValables()
+#9 /home/asus/Documents/GitHub/Projet-final-S4/app/Controllers/Home.php(19): App\Models\PrefixeOperateurModel->numeroEstValide()
+#10 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(951): App\Controllers\Home->login()
+#11 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#14 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#15 /home/asus/Documents/GitHub/Projet-final-S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#16 /home/asus/Documents/GitHub/Projet-final-S4/system/rewrite.php(44): require_once('...')
+#17 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/asus/Documents/GitHub/Projet-final-S4/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/asus/Documents/GitHub/Projet-final-S4/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/PrefixeOperateurModel.php(22): CodeIgniter\BaseModel->findAll()
+#7 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/PrefixeOperateurModel.php(33): App\Models\PrefixeOperateurModel->getPrefixesValables()
+#8 /home/asus/Documents/GitHub/Projet-final-S4/app/Controllers/Home.php(19): App\Models\PrefixeOperateurModel->numeroEstValide()
+#9 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(951): App\Controllers\Home->login()
+#10 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#11 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#14 /home/asus/Documents/GitHub/Projet-final-S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#15 /home/asus/Documents/GitHub/Projet-final-S4/system/rewrite.php(44): require_once('...')
+#16 {main}
+CRITICAL - 2026-07-20 07:19:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: POST, Route: auth/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/PrefixeOperateurModel.php(22): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Models/PrefixeOperateurModel.php(33): App\Models\PrefixeOperateurModel->getPrefixesValables()
+ 8 APPPATH/Controllers/Home.php(19): App\Models\PrefixeOperateurModel->numeroEstValide()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->login()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 07:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 07:23:21 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/asus/Documents/GitHub/Projet-final-S4/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/asus/Documents/GitHub/Projet-final-S4/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/UtilisateurModel.php(25): CodeIgniter\BaseModel->first()
+#8 /home/asus/Documents/GitHub/Projet-final-S4/app/Controllers/Home.php(23): App\Models\UtilisateurModel->findByNumero()
+#9 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(951): App\Controllers\Home->login()
+#10 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#11 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#14 /home/asus/Documents/GitHub/Projet-final-S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#15 /home/asus/Documents/GitHub/Projet-final-S4/system/rewrite.php(44): require_once('...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/asus/Documents/GitHub/Projet-final-S4/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/asus/Documents/GitHub/Projet-final-S4/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/UtilisateurModel.php(25): CodeIgniter\BaseModel->first()
+#7 /home/asus/Documents/GitHub/Projet-final-S4/app/Controllers/Home.php(23): App\Models\UtilisateurModel->findByNumero()
+#8 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(951): App\Controllers\Home->login()
+#9 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/asus/Documents/GitHub/Projet-final-S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/asus/Documents/GitHub/Projet-final-S4/system/rewrite.php(44): require_once('...')
+#15 {main}
+CRITICAL - 2026-07-20 07:23:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: POST, Route: auth/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/UtilisateurModel.php(25): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/Home.php(23): App\Models\UtilisateurModel->findByNumero()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->login()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')

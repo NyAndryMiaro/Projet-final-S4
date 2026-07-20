@@ -5,6 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+
 $routes->get('operateur/dashboard', 'Operateur\Dashboard::index');
 
 $routes->get('operateur/prefixes', 'Operateur\Prefixes::index');
@@ -27,3 +28,6 @@ $routes->match(['GET','POST'], 'client/depot', 'Client\Compte::depot');
 $routes->match(['GET','POST'], 'client/retrait', 'Client\Compte::retrait');
 $routes->match(['GET','POST'], 'client/transfert', 'Client\Compte::transfert');
 $routes->get('client/historique', 'Client\Compte::historique');
+
+$routes->get('/', 'Home::index');
+$routes->post('/auth/login', 'Home::login');
