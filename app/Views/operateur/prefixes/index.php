@@ -6,10 +6,6 @@
     <a href="/operateur/prefixes/create" class="btn btn-primary">+ Ajouter un préfixe</a>
 </div>
 
-<?php if (! empty($error)) : ?>
-    <div class="alert alert-danger"><?= esc($error) ?></div>
-<?php endif; ?>
-
 <table class="table table-bordered bg-white">
     <thead>
         <tr><th>#</th><th>Préfixe</th><th style="width:180px">Actions</th></tr>

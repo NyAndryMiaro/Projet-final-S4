@@ -18,7 +18,7 @@
                 </div>
             <?php endif ?>
 
-            <?= form_open('client/login') ?>
+            <?= form_open('login') ?>
 
                 <div class="mb-3">
                     <label for="numero" class="form-label">Numero de telephone</label>

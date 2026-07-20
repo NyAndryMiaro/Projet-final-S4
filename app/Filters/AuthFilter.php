@@ -12,7 +12,7 @@ class AuthFilter implements FilterInterface
     {
         $session = session();
         if (!$session->get('isLoggedIn')) {
-            return redirect()->to('/client/login')->with('erreur', 'Veuillez vous connecter.');
+            return redirect()->to('/login')->with('erreur', 'Veuillez vous connecter.');
         }
 
         if ($arguments) {

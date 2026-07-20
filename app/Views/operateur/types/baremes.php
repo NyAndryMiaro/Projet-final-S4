@@ -6,10 +6,6 @@
     <a href="/operateur/types/baremes/add" class="btn btn-primary">+ Ajouter une tranche</a>
 </div>
 
-<?php if (! empty($error)) : ?>
-    <div class="alert alert-danger"><?= esc($error) ?></div>
-<?php endif; ?>
-
 <p class="text-muted">Ce barème s'applique aux opérations de retrait et de transfert selon le montant.</p>
 
 <table class="table table-bordered bg-white">

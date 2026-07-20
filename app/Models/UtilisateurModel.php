@@ -14,33 +14,25 @@ class UtilisateurModel extends Model
     protected $solde = 0;
 
     protected $allowedFields = [
-        'numero',
+        'numero_telephone',
         'est_operateur',
+        'date_creation',
         'solde',
     ];
 
     protected $useTimestamps = false;
-
-    public function rechercheParNumero(?string $numero = null): array
-    {
-        if ($numero === null || trim($numero) === '') {
-            return $this->findAll();
-        }
-
-        return $this->like('numero', $numero)->findAll();
-    }
-
     public function findByNumero(string $numero): ?array
     {
-        return $this->where('numero', $numero)->first();
+        return $this->where('numero_telephone', $numero)->first();
     }
 
     public function creerClient(string $numero): int
     {
         $this->insert([
-            'numero'        => $numero,
-            'est_operateur' => 0,
-            'solde'         => 0,
+            'numero_telephone' => $numero,
+            'est_operateur'    => 0,
+            'date_creation'    => date('Y-m-d H:i:s'),
+            'solde'             => 0,
         ]);
 
         return (int) $this->getInsertID();
