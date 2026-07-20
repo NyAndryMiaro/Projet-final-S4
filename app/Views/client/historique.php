@@ -33,7 +33,7 @@
                 <tbody>
                     <?php foreach ($operations as $op) : ?>
                         <?php
-                            $estEnvoyeur = (int) $op['id_envoyeur'] === $idUtilisateur;
+                            $estEnvoyeur = (int) $op['envoyeur'] === (int) $idUtilisateur;
                             $sens = $estEnvoyeur ? 'Envoyé' : 'Reçu';
 
                             if ($op['type_nom'] === 'depot') {
@@ -44,10 +44,9 @@
                         ?>
                         <tr>
                             <td><?= esc($op['date_operation']) ?></td>
-                            <td><?= esc(ucfirst($op['type_nom'])) ?></td>
                             <td><?= esc($sens) ?></td>
-                            <td><?= number_format($op['montant'], 0, ',', ' ') ?> Ar</td>
-                            <td><?= number_format($op['frais_applique'], 0, ',', ' ') ?> Ar</td>
+                            <td><?= number_format($op['valeur'], 0, ',', ' ') ?> Ar</td>
+                            <td><?= number_format($op['frais'], 0, ',', ' ') ?> Ar</td>
                         </tr>
                     <?php endforeach ?>
                 </tbody>
