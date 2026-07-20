@@ -12,8 +12,7 @@
 
 **Tables à creer :**
 
-- `utilisateur` (id, numero_telephone, est_operateur, date_creation)
-- `solde` (id, id_utilisateur [FK], valeur, date_maj)
+- `utilisateur` (id, numero_telephone, est_operateur, solde)
 - `prefixe_operateur` (id, prefixe)
 - `type_operation` (id, nom) — depôt, retrait, transfert
 - `bareme` (id, id_type_operation [FK], borne_inf, borne_sup, frais)
@@ -26,7 +25,7 @@
 - [ ] Inserer des donnees de test :
   - [ ] 2-3 prefixes operateur (033, 037)
   - [ ] les 3 types d'operation
-  - [ ] le barème complet donne en exemple dans le sujet (9 tranches)
+  - [ ] le barème complet
   - [ ] quelques utilisateurs + soldes de depart
   - [ ] quelques operations historiques
 
