@@ -19,7 +19,7 @@ class PrefixeOperateurModel extends Model
 
     public function getPrefixesValables(): array
     {
-        return array_column($this->findAll(), 'prefixe');
+        return array_column($this->findAll(), 'prefixe_operateur');
     }
 
     public function numeroEstValide(string $numero): bool
@@ -30,6 +30,22 @@ class PrefixeOperateurModel extends Model
 
         $prefixe = $matches[1];
 
-        return in_array($prefixe, $this->getPrefixesValables(), true);
+        $prefixesValables = $this->getPrefixesValables();
+        foreach ($prefixesValables as $prefixeValable) {
+            if ($prefixe === $prefixeValable) {
+                return true;
+            }
+        }
+
+        return false;
     }
+
+    public function verifierDeuxPrefixes($num1, $num2) : bool
+    {
+        $prefixe1 = substr($num1, 0, 3);
+        $prefixe2 = substr($num2, 0, 3);
+
+        return $prefixe1 === $prefixe2;
+    }
+
 }

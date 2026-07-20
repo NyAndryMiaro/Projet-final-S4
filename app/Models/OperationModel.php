@@ -6,8 +6,15 @@ class OperationModel extends Model
     protected $table = 'operation';
     protected $primaryKey = 'id';
     protected $allowedFields = [
-        'id_type_operation', 'valeur', 'frais',
-        'envoyeur', 'destinataire', 'date_operation'
+        'id_type_operation', 
+        'valeur', 
+        'frais',
+        'frais_retrait_inclus',
+        'envoyeur', 
+        'destinataire', 
+        'numero_destinataire_externe',
+        'id_autre_operateur',
+        'date_operation'
     ];
     protected $returnType = 'array';
 

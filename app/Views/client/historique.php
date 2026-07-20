@@ -44,6 +44,7 @@
                         ?>
                         <tr>
                             <td><?= esc($op['date_operation']) ?></td>
+                            <td></td>
                             <td><?= esc($sens) ?></td>
                             <td><?= number_format($op['valeur'], 0, ',', ' ') ?> Ar</td>
                             <td><?= number_format($op['frais'], 0, ',', ' ') ?> Ar</td>

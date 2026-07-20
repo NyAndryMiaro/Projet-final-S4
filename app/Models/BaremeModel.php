@@ -15,7 +15,7 @@ class BaremeModel extends Model
         'id_type_operation',
         'borne_inf',
         'borne_sup',
-        'frais',
+        'valeur',
     ];
 
     protected $useTimestamps = false;
@@ -37,13 +37,13 @@ class BaremeModel extends Model
             throw new \RuntimeException("Aucun barème trouvé pour ce montant.");
         }
 
-        return (float) $tranche['frais'];
+        return (float) $tranche['valeur'];
     }
 
     public function getFraisPourMontant(float $montant): float
     {
-        $row = $this->where('born_inf <=', $montant)
-                    ->where('born_sup >=', $montant)
+        $row = $this->where('borne_inf <=', $montant)
+                    ->where('borne_sup >=', $montant)
                     ->first();
         return $row ? (float) $row['valeur'] : 0.0;
     }

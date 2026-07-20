@@ -61,4 +61,15 @@ class UtilisateurModel extends Model
         $nouveauSolde = $utilisateur['solde'] + $montant;
         return $this->update($idUtilisateur, ['solde' => $nouveauSolde]);
     }
+
+    public function getCommission(): float
+    {
+          $row = $this->db->table('config_commission_inter_operateur')
+                     ->select('pourcentage')
+                     ->orderBy('id', 'ASC')
+                     ->get()
+                     ->getRowArray();
+
+    return $row ? (float) $row['pourcentage'] : 0.0;
+    }
 }
