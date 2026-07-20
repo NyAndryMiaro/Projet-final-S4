@@ -12,13 +12,7 @@
         <div class="card-body p-4">
             <h4 class="text-center mb-4">Mobile Money</h4>
 
-            <?php if (session()->getFlashdata('erreur')) : ?>
-                <div class="alert alert-danger">
-                    <?= esc(session()->getFlashdata('erreur')) ?>
-                </div>
-            <?php endif ?>
-
-            <?= form_open('client/login') ?>
+            <form action="<?= site_url('auth/login') ?>" method="post">
 
                 <div class="mb-3">
                     <label for="numero" class="form-label">Numero de telephone</label>
@@ -31,13 +25,12 @@
                         value="<?= esc(old('numero')) ?>"
                         required
                         pattern="0[0-9]{9}"
-                        title="Format attendu : 0XXXXXXXXX"
                     >
                 </div>
 
                 <button type="submit" class="btn btn-primary w-100">Se connecter</button>
 
-            <?= form_close() ?>
+            </form>
 
             <p class="text-muted text-center mt-3" style="font-size: 0.85rem;">
                 Si votre numero n'est pas encore enregistre, un compte sera creer automatiquement.

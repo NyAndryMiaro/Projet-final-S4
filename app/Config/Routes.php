@@ -8,8 +8,6 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-$routes->GET('/', 'Home::index');
-
 $routes->GET('operateur/dashboard', 'Dashboard::index');
 
 $routes->GET('operateur/prefixes', 'Prefixes::index');
@@ -29,9 +27,6 @@ $routes->GET('operateur/types/baremes/delete/(:num)', 'TypesOperation::deleteBar
 
 $routes->GET('operateur/comptes', 'Comptes::index');
 
-$routes->GET('client/login', 'Home::index');
-$routes->POST('client/login', 'Home::index');
-$routes->GET('client/logout', 'Home::index');
 
 $routes->GET('client/compte', 'Compte::index');
 $routes->GET('client/depot', 'Compte::depot');
@@ -41,3 +36,26 @@ $routes->POST('client/retrait', 'Compte::retrait');
 $routes->GET('client/transfert', 'Compte::transfert');
 $routes->POST('client/transfert', 'Compte::transfert');
 $routes->GET('client/historique', 'Compte::historique');
+$routes->match(['GET','POST'], 'client/login', 'Client\Auth::login');
+$routes->get('client/logout', 'Client\Auth::logout');
+$routes->get('client/compte', 'Client\Compte::index');
+$routes->match(['GET','POST'], 'client/depot', 'Client\Compte::depot');
+$routes->match(['GET','POST'], 'client/retrait', 'Client\Compte::retrait');
+$routes->match(['GET','POST'], 'client/transfert', 'Client\Compte::transfert');
+$routes->get('client/historique', 'Client\Compte::historique');
+
+$routes->get('/', 'Home::index');
+$routes->post('/auth/login', 'Home::login');
+
+$routes->get('dashboard', 'ClientController::dashboard');
+
+$routes->get('depot', 'ClientController::depot');
+$routes->post('depot', 'ClientController::depot');
+
+$routes->get('retrait', 'ClientController::retrait');
+$routes->post('retrait', 'ClientController::retrait');
+
+$routes->get('transfert', 'ClientController::transfert');
+$routes->post('transfert', 'ClientController::transfert');
+
+$routes->get('historique', 'ClientController::historique');
