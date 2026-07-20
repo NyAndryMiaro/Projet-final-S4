@@ -28,8 +28,6 @@ class Home extends BaseController
         }
 
         session()->set('id_utilisateur', $utilisateur['id']);
-        session()->set('utilisateur', $utilisateur);
-        session()->set('numero', $utilisateur['numero']);
 
         return redirect()->to('dashboard');
     }

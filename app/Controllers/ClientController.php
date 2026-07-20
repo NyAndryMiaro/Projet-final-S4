@@ -43,7 +43,7 @@ class ClientController extends BaseController
         }
 
         return $this->utilisateurModel->update($idUtilisateur, [
-            'solde' => (float) $solde['solde'] - $montant,
+            'solde' => (float) $solde - $montant,
         ]);
     }
 
@@ -112,7 +112,7 @@ class ClientController extends BaseController
             $solde = $this->utilisateurModel->getSoldeUtilisateur($idUtilisateur);
             $total = $montant + $frais;
 
-            if (!$solde || $solde['solde'] < $total) {
+            if (!$solde || $solde < $total) {
                 return redirect()->back()->with('erreur', 'Solde insuffisant pour ce retrait (montant + frais).');
             }
 
@@ -131,7 +131,7 @@ class ClientController extends BaseController
 
             $db->transComplete();
 
-            return redirect()->to('/client/dashboard')
+            return redirect()->to('/dashboard')
                 ->with('succes', "Retrait effectué. Frais appliqué : {$frais} Ar.");
         }
 
@@ -171,7 +171,7 @@ class ClientController extends BaseController
             $solde = $this->utilisateurModel->getSoldeUtilisateur($idUtilisateur);
             $total = $montant + $frais;
 
-            if (!$solde || $solde['solde'] < $total) {
+            if (!$solde || $solde < $total) {
                 return redirect()->back()->with('erreur', 'Solde insuffisant pour ce transfert (montant + frais).');
             }
 
@@ -192,7 +192,7 @@ class ClientController extends BaseController
 
             $db->transComplete();
 
-            return redirect()->to('/client/dashboard')
+            return redirect()->to('/dashboard')
                 ->with('succes', "Transfert effectué. Frais appliqué : {$frais} Ar.");
         }
 

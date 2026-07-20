@@ -26,7 +26,7 @@
 
     <div class="card text-center mb-4 shadow-sm">
         <div class="card-body">
-            <h5> Solde actuel : <?= esc($solde['solde'] ?? 0) ?> Ar</h5>
+            <h5> Solde actuel : <?= esc($solde ?? 0) ?> Ar</h5>
             <p class="text-muted">Numéro de téléphone : <?= esc($numero ?? 'Non spécifié') ?></p>
             <p class="text-muted">Solde disponible</p>
         </div>
