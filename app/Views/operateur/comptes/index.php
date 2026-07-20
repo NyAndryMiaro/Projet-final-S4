@@ -3,6 +3,10 @@
 
 <h2 class="mb-4">Situation des comptes clients</h2>
 
+<?php if (! empty($error)) : ?>
+    <div class="alert alert-danger"><?= esc($error) ?></div>
+<?php endif; ?>
+
 <form method="get" action="/operateur/comptes" class="mb-3" style="max-width:400px;">
     <div class="input-group">
         <input type="text" name="numero" class="form-control" placeholder="Rechercher par numéro..." value="<?= esc($numero ?? '') ?>">

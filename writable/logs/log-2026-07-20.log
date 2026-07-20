@@ -1046,3 +1046,124 @@ WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "po
  8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
+ERROR - 2026-07-20 07:20:39 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Models/OperationModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Controllers/Dashboard.php(15): App\Models\OperationModel->totalGains()
+#7 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+#8 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Models/OperationModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Controllers/Dashboard.php(15): App\Models\OperationModel->totalGains()
+#6 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+#7 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-07-20 07:20:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: operateur/dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/OperationModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Dashboard.php(15): App\Models\OperationModel->totalGains()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
+ERROR - 2026-07-20 07:23:28 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Models/OperationModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Controllers/Dashboard.php(15): App\Models\OperationModel->totalGains()
+#7 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+#8 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Models/OperationModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Controllers/Dashboard.php(15): App\Models\OperationModel->totalGains()
+#6 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+#7 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-07-20 07:23:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: operateur/dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/OperationModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Dashboard.php(15): App\Models\OperationModel->totalGains()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
+DEBUG - 2026-07-20 07:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 07:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

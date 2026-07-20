@@ -3,6 +3,10 @@
 
 <h2 class="mb-4">Modifier la tranche</h2>
 
+<?php if (! empty($error)) : ?>
+    <div class="alert alert-danger"><?= esc($error) ?></div>
+<?php endif; ?>
+
 <form method="post" action="/operateur/types/baremes/edit/<?= $bareme['id'] ?>" style="max-width:400px;">
     <?= csrf_field() ?>
     <div class="mb-3">

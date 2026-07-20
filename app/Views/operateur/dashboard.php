@@ -3,6 +3,10 @@
 
 <h2 class="mb-4">Vue d'ensemble des gains</h2>
 
+<?php if (! empty($error)) : ?>
+    <div class="alert alert-danger"><?= esc($error) ?></div>
+<?php endif; ?>
+
 <div class="btn-group mb-4">
     <a href="/operateur/dashboard" class="btn btn-outline-secondary <?= !$periode ? 'active' : '' ?>">Global</a>
     <a href="/operateur/dashboard?periode=jour" class="btn btn-outline-secondary <?= $periode === 'jour' ? 'active' : '' ?>">Jour</a>
