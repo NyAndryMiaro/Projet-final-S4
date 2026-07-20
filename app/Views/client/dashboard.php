@@ -26,24 +26,24 @@
 
     <div class="card text-center mb-4 shadow-sm">
         <div class="card-body">
-            <h5> Solde actuel : 500 000 Ar</h5>
-            <p class="text-muted">Numéro de téléphone : 0331234567</p>
+            <h5> Solde actuel : <?= esc($solde['solde'] ?? 0) ?> Ar</h5>
+            <p class="text-muted">Numéro de téléphone : <?= esc($numero ?? 'Non spécifié') ?></p>
             <p class="text-muted">Solde disponible</p>
         </div>
     </div>
 
     <div class="row g-3">
         <div class="col-6 col-md-3">
-            <a href="/client/depot" class="btn btn-success w-100 py-3">Dépôt</a>
+            <a href="/depot" class="btn btn-success w-100 py-3">Dépôt</a>
         </div>
         <div class="col-6 col-md-3">
-            <a href="/client/retrait" class="btn btn-warning w-100 py-3">Retrait</a>
+            <a href="/retrait" class="btn btn-warning w-100 py-3">Retrait</a>
         </div>
         <div class="col-6 col-md-3">
-            <a href="/client/transfert" class="btn btn-primary w-100 py-3">Transfert</a>
+            <a href="/transfert" class="btn btn-primary w-100 py-3">Transfert</a>
         </div>
         <div class="col-6 col-md-3">
-            <a href="/client/historique" class="btn btn-secondary w-100 py-3">Historique</a>
+            <a href="/historique" class="btn btn-secondary w-100 py-3">Historique</a>
         </div>
     </div>
 

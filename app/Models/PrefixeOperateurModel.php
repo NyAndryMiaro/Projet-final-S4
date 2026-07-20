@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class PrefixeOperateurModel extends Model
 {
-    protected $table            = 'prefixe';
+    protected $table            = 'prefixe_operateur';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';

@@ -16,7 +16,7 @@
                 <div class="alert alert-danger"><?= esc(session()->getFlashdata('erreur')) ?></div>
             <?php endif ?>
 
-            <?= form_open('client/depot') ?>
+            <form action="<?= site_url('depot') ?>" method="post">
 
                 <div class="mb-3">
                     <label for="montant" class="form-label">Montant (Ar)</label>
@@ -25,9 +25,9 @@
 
                 <button type="submit" class="btn btn-success w-100">Confirmer le dépôt</button>
 
-            <?= form_close() ?>
+            </form>
 
-            <a href="/client/dashboard" class="d-block text-center mt-3">Retour au tableau de bord</a>
+            <a href="dashboard" class="d-block text-center mt-3">Retour au tableau de bord</a>
         </div>
     </div>
 </div>

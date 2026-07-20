@@ -16,7 +16,7 @@
                 <div class="alert alert-danger"><?= esc(session()->getFlashdata('erreur')) ?></div>
             <?php endif ?>
 
-            <?= form_open('client/transfert') ?>
+            <form action="<?= site_url('transfert') ?>" method="post">
 
                 <div class="mb-3">
                     <label for="numero_destinataire" class="form-label">Numéro du destinataire</label>
@@ -32,9 +32,9 @@
 
                 <button type="submit" class="btn btn-primary w-100">Confirmer le transfert</button>
 
-            <?= form_close() ?>
+            </form>
 
-            <a href="/client/dashboard" class="d-block text-center mt-3">Retour au tableau de bord</a>
+            <a href="/dashboard" class="d-block text-center mt-3">Retour au tableau de bord</a>
         </div>
     </div>
 </div>

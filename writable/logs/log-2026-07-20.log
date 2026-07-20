@@ -1,1240 +1,185 @@
-ERROR - 2026-07-20 06:13:06 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#11 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#12 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#11 {main}
-CRITICAL - 2026-07-20 06:13:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: CLI, Route: db:seed/DatabaseSeeder]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
- 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
- 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
- 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
- 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
- 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
-10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
-ERROR - 2026-07-20 06:14:35 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#11 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#12 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#11 {main}
-CRITICAL - 2026-07-20 06:14:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: CLI, Route: db:seed/DatabaseSeeder]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
- 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
- 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
- 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
- 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
- 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
-10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
-ERROR - 2026-07-20 06:16:05 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#11 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#12 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#11 {main}
-CRITICAL - 2026-07-20 06:16:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: CLI, Route: db:seed/DatabaseSeeder]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
- 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
- 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
- 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
- 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
- 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
-10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
-ERROR - 2026-07-20 06:16:15 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#11 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#12 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#11 {main}
-CRITICAL - 2026-07-20 06:16:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: CLI, Route: db:seed/DatabaseSeeder]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
- 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
- 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
- 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
- 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
- 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
-10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
-ERROR - 2026-07-20 06:17:10 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#11 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#12 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#11 {main}
-CRITICAL - 2026-07-20 06:17:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: CLI, Route: db:seed/DatabaseSeeder]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
- 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
- 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
- 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
- 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
- 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
-10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
-ERROR - 2026-07-20 06:18:25 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#11 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#12 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#11 {main}
-CRITICAL - 2026-07-20 06:18:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: CLI, Route: db:seed/DatabaseSeeder]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
- 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
- 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
- 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
- 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
- 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
-10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
-ERROR - 2026-07-20 06:19:53 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#11 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#12 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme d'info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#11 {main}
-CRITICAL - 2026-07-20 06:19:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: CLI, Route: db:seed/DatabaseSeeder]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
- 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
- 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
- 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
- 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
- 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
-10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
-ERROR - 2026-07-20 06:21:21 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#11 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#12 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#11 {main}
-CRITICAL - 2026-07-20 06:21:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: CLI, Route: db:seed/DatabaseSeeder]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
- 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
- 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
- 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
- 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
- 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
-10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
-ERROR - 2026-07-20 06:23:11 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#11 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#12 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#11 {main}
-CRITICAL - 2026-07-20 06:23:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: CLI, Route: db:seed/DatabaseSeeder]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
- 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
- 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
- 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
- 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
- 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
-10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
-ERROR - 2026-07-20 06:25:55 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#11 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#12 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
-#4 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
-#5 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
-#6 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
-#7 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
-#8 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(442): CodeIgniter\CLI\Console->run()
-#9 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/system/Boot.php(166): CodeIgniter\Boot::runCommand()
-#10 /home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/spark(87): CodeIgniter\Boot::bootSpark()
-#11 {main}
-CRITICAL - 2026-07-20 06:25:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: CLI, Route: db:seed/DatabaseSeeder]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
- 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
- 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
- 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
- 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
- 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
-10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/create', 'Operateur\\Prefixes::create')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/create', 'Operateur\\Prefixes::create')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/edit/(:num)', 'Operateur\\Prefixes::edit/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/edit/(:num)', 'Operateur\\Prefixes::edit/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(17): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/add', 'Operateur\\TypesOperation::addBareme')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(17): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/add', 'Operateur\\TypesOperation::addBareme')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(18): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/edit/(:num)', 'Operateur\\TypesOperation::editBareme/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(18): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/edit/(:num)', 'Operateur\\TypesOperation::editBareme/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(23): CodeIgniter\Router\RouteCollection->match([...], 'client/login', 'Client\\Auth::login')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(23): CodeIgniter\Router\RouteCollection->match([...], 'client/login', 'Client\\Auth::login')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(26): CodeIgniter\Router\RouteCollection->match([...], 'client/depot', 'Client\\Compte::depot')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(26): CodeIgniter\Router\RouteCollection->match([...], 'client/depot', 'Client\\Compte::depot')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(27): CodeIgniter\Router\RouteCollection->match([...], 'client/retrait', 'Client\\Compte::retrait')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(27): CodeIgniter\Router\RouteCollection->match([...], 'client/retrait', 'Client\\Compte::retrait')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(28): CodeIgniter\Router\RouteCollection->match([...], 'client/transfert', 'Client\\Compte::transfert')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 06:59:44 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(28): CodeIgniter\Router\RouteCollection->match([...], 'client/transfert', 'Client\\Compte::transfert')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/create', 'Operateur\\Prefixes::create')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/create', 'Operateur\\Prefixes::create')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/edit/(:num)', 'Operateur\\Prefixes::edit/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/edit/(:num)', 'Operateur\\Prefixes::edit/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(17): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/add', 'Operateur\\TypesOperation::addBareme')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(17): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/add', 'Operateur\\TypesOperation::addBareme')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(18): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/edit/(:num)', 'Operateur\\TypesOperation::editBareme/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(18): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/edit/(:num)', 'Operateur\\TypesOperation::editBareme/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(23): CodeIgniter\Router\RouteCollection->match([...], 'client/login', 'Client\\Auth::login')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(23): CodeIgniter\Router\RouteCollection->match([...], 'client/login', 'Client\\Auth::login')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(26): CodeIgniter\Router\RouteCollection->match([...], 'client/depot', 'Client\\Compte::depot')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(26): CodeIgniter\Router\RouteCollection->match([...], 'client/depot', 'Client\\Compte::depot')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(27): CodeIgniter\Router\RouteCollection->match([...], 'client/retrait', 'Client\\Compte::retrait')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(27): CodeIgniter\Router\RouteCollection->match([...], 'client/retrait', 'Client\\Compte::retrait')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(28): CodeIgniter\Router\RouteCollection->match([...], 'client/transfert', 'Client\\Compte::transfert')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:08 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(28): CodeIgniter\Router\RouteCollection->match([...], 'client/transfert', 'Client\\Compte::transfert')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
- 6 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
- 7 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/create', 'Operateur\\Prefixes::create')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/create', 'Operateur\\Prefixes::create')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/edit/(:num)', 'Operateur\\Prefixes::edit/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/edit/(:num)', 'Operateur\\Prefixes::edit/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(17): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/add', 'Operateur\\TypesOperation::addBareme')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(17): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/add', 'Operateur\\TypesOperation::addBareme')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(18): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/edit/(:num)', 'Operateur\\TypesOperation::editBareme/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(18): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/edit/(:num)', 'Operateur\\TypesOperation::editBareme/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(23): CodeIgniter\Router\RouteCollection->match([...], 'client/login', 'Client\\Auth::login')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(23): CodeIgniter\Router\RouteCollection->match([...], 'client/login', 'Client\\Auth::login')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(26): CodeIgniter\Router\RouteCollection->match([...], 'client/depot', 'Client\\Compte::depot')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(26): CodeIgniter\Router\RouteCollection->match([...], 'client/depot', 'Client\\Compte::depot')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(27): CodeIgniter\Router\RouteCollection->match([...], 'client/retrait', 'Client\\Compte::retrait')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(27): CodeIgniter\Router\RouteCollection->match([...], 'client/retrait', 'Client\\Compte::retrait')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(28): CodeIgniter\Router\RouteCollection->match([...], 'client/transfert', 'Client\\Compte::transfert')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:16 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(28): CodeIgniter\Router\RouteCollection->match([...], 'client/transfert', 'Client\\Compte::transfert')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/create', 'Operateur\\Prefixes::create')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(11): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/create', 'Operateur\\Prefixes::create')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/edit/(:num)', 'Operateur\\Prefixes::edit/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(12): CodeIgniter\Router\RouteCollection->match([...], 'operateur/prefixes/edit/(:num)', 'Operateur\\Prefixes::edit/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(17): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/add', 'Operateur\\TypesOperation::addBareme')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(17): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/add', 'Operateur\\TypesOperation::addBareme')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(18): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/edit/(:num)', 'Operateur\\TypesOperation::editBareme/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(18): CodeIgniter\Router\RouteCollection->match([...], 'operateur/types/baremes/edit/(:num)', 'Operateur\\TypesOperation::editBareme/$1')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(23): CodeIgniter\Router\RouteCollection->match([...], 'client/login', 'Client\\Auth::login')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(23): CodeIgniter\Router\RouteCollection->match([...], 'client/login', 'Client\\Auth::login')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(26): CodeIgniter\Router\RouteCollection->match([...], 'client/depot', 'Client\\Compte::depot')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(26): CodeIgniter\Router\RouteCollection->match([...], 'client/depot', 'Client\\Compte::depot')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(27): CodeIgniter\Router\RouteCollection->match([...], 'client/retrait', 'Client\\Compte::retrait')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(27): CodeIgniter\Router\RouteCollection->match([...], 'client/retrait', 'Client\\Compte::retrait')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
- 2 APPPATH/Config/Routes.php(28): CodeIgniter\Router\RouteCollection->match([...], 'client/transfert', 'Client\\Compte::transfert')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-WARNING - 2026-07-20 07:04:26 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH/Router/RouteCollection.php on line 1026.
- 1 SYSTEMPATH/Router/RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
- 2 APPPATH/Config/Routes.php(28): CodeIgniter\Router\RouteCollection->match([...], 'client/transfert', 'Client\\Compte::transfert')
- 3 SYSTEMPATH/Router/RouteCollection.php(339): require('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/app/Config/Routes.php')
- 4 SYSTEMPATH/CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
- 5 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
- 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-10 SYSTEMPATH/rewrite.php(44): require_once('/home/itu/Bureau/ETU004176/S4/Systeme_info/Projet final S4/public/index.php')
-DEBUG - 2026-07-20 07:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2026-07-20 07:13:29 --> Error: Call to undefined function form_open()
-[Method: GET, Route: /]
-in APPPATH/Views/auth/login.php on line 21.
+DEBUG - 2026-07-20 08:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 08:29:22 --> Error: Class "App\Models\SoldeModel" not found
+[Method: GET, Route: dashboard]
+in APPPATH/Controllers/ClientController.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\ClientController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 08:31:25 --> Error: Class "App\Models\BaremeModel" not found
+[Method: GET, Route: dashboard]
+in APPPATH/Controllers/ClientController.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\ClientController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 08:32:23 --> Error: Class "App\Controllers\BaremModel" not found
+[Method: GET, Route: dashboard]
+in APPPATH/Controllers/ClientController.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\ClientController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 08:32:56 --> Error: Class "App\Controllers\BaremModel" not found
+[Method: GET, Route: dashboard]
+in APPPATH/Controllers/ClientController.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\ClientController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+CRITICAL - 2026-07-20 08:35:48 --> Error: Class "App\Models\BaremeModel" not found
+[Method: GET, Route: dashboard]
+in APPPATH/Controllers/ClientController.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\ClientController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 08:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 08:37:17 --> Error: Call to undefined function form_open()
+[Method: GET, Route: depot]
+in APPPATH/Views/client/depot.php on line 19.
  1 SYSTEMPATH/View/View.php(240): include()
  2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
- 4 APPPATH/Controllers/Home.php(10): view()
- 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->index()
+ 4 APPPATH/Controllers/ClientController.php(100): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->depot()
  6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 11 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
-DEBUG - 2026-07-20 07:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-ERROR - 2026-07-20 07:19:16 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
-#5 /home/asus/Documents/GitHub/Projet-final-S4/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
-#6 /home/asus/Documents/GitHub/Projet-final-S4/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
-#7 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/PrefixeOperateurModel.php(22): CodeIgniter\BaseModel->findAll()
-#8 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/PrefixeOperateurModel.php(33): App\Models\PrefixeOperateurModel->getPrefixesValables()
-#9 /home/asus/Documents/GitHub/Projet-final-S4/app/Controllers/Home.php(19): App\Models\PrefixeOperateurModel->numeroEstValide()
-#10 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(951): App\Controllers\Home->login()
-#11 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-#12 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-#13 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
-#14 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-#15 /home/asus/Documents/GitHub/Projet-final-S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
-#16 /home/asus/Documents/GitHub/Projet-final-S4/system/rewrite.php(44): require_once('...')
-#17 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
-#4 /home/asus/Documents/GitHub/Projet-final-S4/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
-#5 /home/asus/Documents/GitHub/Projet-final-S4/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
-#6 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/PrefixeOperateurModel.php(22): CodeIgniter\BaseModel->findAll()
-#7 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/PrefixeOperateurModel.php(33): App\Models\PrefixeOperateurModel->getPrefixesValables()
-#8 /home/asus/Documents/GitHub/Projet-final-S4/app/Controllers/Home.php(19): App\Models\PrefixeOperateurModel->numeroEstValide()
-#9 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(951): App\Controllers\Home->login()
-#10 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-#11 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-#12 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
-#13 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-#14 /home/asus/Documents/GitHub/Projet-final-S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
-#15 /home/asus/Documents/GitHub/Projet-final-S4/system/rewrite.php(44): require_once('...')
-#16 {main}
-CRITICAL - 2026-07-20 07:19:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: POST, Route: auth/login]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 6 APPPATH/Models/PrefixeOperateurModel.php(22): CodeIgniter\BaseModel->findAll()
- 7 APPPATH/Models/PrefixeOperateurModel.php(33): App\Models\PrefixeOperateurModel->getPrefixesValables()
- 8 APPPATH/Controllers/Home.php(19): App\Models\PrefixeOperateurModel->numeroEstValide()
- 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->login()
-10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-15 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
-DEBUG - 2026-07-20 07:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-ERROR - 2026-07-20 07:23:21 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php:111
-Stack trace:
-#0 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
-#1 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#2 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#3 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
-#4 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
-#5 /home/asus/Documents/GitHub/Projet-final-S4/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
-#6 /home/asus/Documents/GitHub/Projet-final-S4/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
-#7 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/UtilisateurModel.php(25): CodeIgniter\BaseModel->first()
-#8 /home/asus/Documents/GitHub/Projet-final-S4/app/Controllers/Home.php(23): App\Models\UtilisateurModel->findByNumero()
-#9 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(951): App\Controllers\Home->login()
-#10 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-#11 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-#12 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
-#13 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-#14 /home/asus/Documents/GitHub/Projet-final-S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
-#15 /home/asus/Documents/GitHub/Projet-final-S4/system/rewrite.php(44): require_once('...')
-#16 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php:118
-Stack trace:
-#0 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/asus/Documents/GitHub/Projet-final-S4/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
-#4 /home/asus/Documents/GitHub/Projet-final-S4/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
-#5 /home/asus/Documents/GitHub/Projet-final-S4/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
-#6 /home/asus/Documents/GitHub/Projet-final-S4/app/Models/UtilisateurModel.php(25): CodeIgniter\BaseModel->first()
-#7 /home/asus/Documents/GitHub/Projet-final-S4/app/Controllers/Home.php(23): App\Models\UtilisateurModel->findByNumero()
-#8 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(951): App\Controllers\Home->login()
-#9 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-#10 /home/asus/Documents/GitHub/Projet-final-S4/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-#11 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
-#12 /home/asus/Documents/GitHub/Projet-final-S4/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-#13 /home/asus/Documents/GitHub/Projet-final-S4/public/index.php(59): CodeIgniter\Boot::bootWeb()
-#14 /home/asus/Documents/GitHub/Projet-final-S4/system/rewrite.php(44): require_once('...')
-#15 {main}
-CRITICAL - 2026-07-20 07:23:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
-Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
-[Method: POST, Route: auth/login]
-in SYSTEMPATH/Database/BaseConnection.php on line 606.
- 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
- 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
- 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
- 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
- 6 APPPATH/Models/UtilisateurModel.php(25): CodeIgniter\BaseModel->first()
- 7 APPPATH/Controllers/Home.php(23): App\Models\UtilisateurModel->findByNumero()
- 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->login()
- 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-14 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
-DEBUG - 2026-07-20 07:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2026-07-20 07:37:50 --> ErrorException: Undefined variable $numero
-[Method: POST, Route: auth/login]
-in APPPATH/Views/client/dashboard.php on line 29.
- 1 APPPATH/Views/client/dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(240): include('/home/asus/Documents/GitHub/Projet-final-S4/app/Views/client/dashboard.php')
+DEBUG - 2026-07-20 08:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 08:51:12 --> TypeError: App\Models\UtilisateurModel::getSoldeUtilisateur(): Return value must be of type App\Models\double, float returned
+[Method: GET, Route: dashboard]
+in APPPATH/Models/UtilisateurModel.php on line 30.
+ 1 APPPATH/Controllers/ClientController.php(53): App\Models\UtilisateurModel->getSoldeUtilisateur()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->dashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 08:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 08:56:54 --> Error: Call to undefined function form_open()
+[Method: GET, Route: retrait]
+in APPPATH/Views/client/retrait.php on line 19.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ClientController.php(138): view()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->retrait()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
+DEBUG - 2026-07-20 08:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 08:57:11 --> ErrorException: Undefined array key "id_envoyeur"
+[Method: GET, Route: historique]
+in APPPATH/Views/client/historique.php on line 36.
+ 1 APPPATH/Views/client/historique.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/asus/Documents/GitHub/Projet-final-S4/app/Views/client/historique.php')
  3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
- 5 APPPATH/Controllers/Home.php(32): view()
- 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->login()
+ 5 APPPATH/Controllers/ClientController.php(207): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->historique()
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
-DEBUG - 2026-07-20 07:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2026-07-20 07:38:28 --> ErrorException: Undefined variable $numero
-[Method: POST, Route: auth/login]
-in APPPATH/Views/client/dashboard.php on line 29.
- 1 APPPATH/Views/client/dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(240): include('/home/asus/Documents/GitHub/Projet-final-S4/app/Views/client/dashboard.php')
+DEBUG - 2026-07-20 08:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 08:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 09:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 09:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 09:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 09:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 09:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 09:00:32 --> ErrorException: Undefined array key "id_envoyeur"
+[Method: GET, Route: historique]
+in APPPATH/Views/client/historique.php on line 36.
+ 1 APPPATH/Views/client/historique.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/asus/Documents/GitHub/Projet-final-S4/app/Views/client/historique.php')
  3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
- 5 APPPATH/Controllers/Home.php(32): view()
- 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->login()
+ 5 APPPATH/Controllers/ClientController.php(207): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ClientController->historique()
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
-DEBUG - 2026-07-20 07:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2026-07-20 07:38:44 --> ErrorException: Undefined variable $solde
-[Method: POST, Route: auth/login]
-in APPPATH/Views/client/dashboard.php on line 29.
- 1 APPPATH/Views/client/dashboard.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(240): include('/home/asus/Documents/GitHub/Projet-final-S4/app/Views/client/dashboard.php')
- 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
- 5 APPPATH/Controllers/Home.php(32): view()
- 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->login()
- 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
- 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
- 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-12 SYSTEMPATH/rewrite.php(44): require_once('/home/asus/Documents/GitHub/Projet-final-S4/public/index.php')
-DEBUG - 2026-07-20 07:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-07-20 07:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 09:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

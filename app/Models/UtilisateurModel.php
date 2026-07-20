@@ -25,6 +25,11 @@ class UtilisateurModel extends Model
         return $this->where('numero', $numero)->first();
     }
 
+    public function getSoldeUtilisateur(int $idUtilisateur): float
+    {
+        return (float) $this->select('solde')->where('id', $idUtilisateur)->first()['solde'];
+    }
+
     public function creerClient(string $numero): int
     {
         $this->insert([
@@ -34,5 +39,16 @@ class UtilisateurModel extends Model
         ]);
 
         return (int) $this->getInsertID();
+    }
+
+    public function crediterSolde(int $idUtilisateur, float $montant): bool
+    {
+        $utilisateur = $this->find($idUtilisateur);
+        if (!$utilisateur) {
+            return false;
+        }
+
+        $nouveauSolde = $utilisateur['solde'] + $montant;
+        return $this->update($idUtilisateur, ['solde' => $nouveauSolde]);
     }
 }

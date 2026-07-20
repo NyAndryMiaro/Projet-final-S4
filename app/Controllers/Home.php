@@ -11,24 +11,26 @@ class Home extends BaseController
     }
 
     public function login() {
-        $numero = $this->request->getPost('numero');
-
         $utilisateurModel = new UtilisateurModel();
         $prefixeModel = new PrefixeOperateurModel();
+
+        $numero = $this->request->getPost('numero');
 
         // if (!$prefixeModel->numeroEstValide($numero)) {
         //     return redirect()->back()->with('erreur', 'Le numéro de téléphone n\'est pas valide.');
         // }
 
-        // $utilisateur = $utilisateurModel->findByNumero($numero);
+        $utilisateur = $utilisateurModel->findByNumero($numero);
 
-        // if (!$utilisateur) {
-        //     $utilisateurId = $utilisateurModel->creerClient($numero);
-        //     $utilisateur = $utilisateurModel->find($utilisateurId);
-        // }
+        if (!$utilisateur) {
+            $utilisateurId = $utilisateurModel->creerClient($numero);
+            $utilisateur = $utilisateurModel->find($utilisateurId);
+        }
 
-        // session()->set('utilisateur', $utilisateur);
+        session()->set('id_utilisateur', $utilisateur['id']);
+        session()->set('utilisateur', $utilisateur);
+        session()->set('numero', $utilisateur['numero']);
 
-        return view('/client/dashboard');
+        return redirect()->to('dashboard');
     }
 }
