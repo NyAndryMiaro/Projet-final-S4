@@ -10,7 +10,7 @@
 <nav class="navbar navbar-dark bg-primary mb-4">
     <div class="container">
         <span class="navbar-brand mb-0 h1">Historique</span>
-        <a href="/client/dashboard" class="btn btn-outline-light btn-sm">Retour</a>
+        <a href="/dashboard" class="btn btn-outline-light btn-sm">Retour</a>
     </div>
 </nav>
 
