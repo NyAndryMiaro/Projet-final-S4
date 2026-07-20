@@ -259,8 +259,7 @@ class ClientController extends BaseController
             }
 
             if (!$this->prefixeModel->verifierDeuxPrefixes($numeroEnvoyeur, $numero)) {
-                return redirect()->back()->withInput()->with('erreur', "Vous essayez de faire un multi transfert avec un autre opérateur."+
-                " ({$numero}). Cette opération n'est pas autorisée.");
+                return redirect()->back()->withInput()->with('erreur', "Vous essayez de faire un multi transfert avec un autre opérateur.");
             }
 
             $utilisateur = $this->utilisateurModel->findByNumero($numero);
