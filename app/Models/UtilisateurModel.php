@@ -72,4 +72,15 @@ class UtilisateurModel extends Model
 
     return $row ? (float) $row['pourcentage'] : 0.0;
     }
+
+    public function getCommissionEntreOperateur(): float
+    {
+          $row = $this->db->table('config_commission_entre_operateur')
+                     ->select('pourcentage')
+                     ->orderBy('id', 'ASC')
+                     ->get()
+                     ->getRowArray();
+
+    return $row ? (float) $row['pourcentage'] : 0.0;
+    }
 }

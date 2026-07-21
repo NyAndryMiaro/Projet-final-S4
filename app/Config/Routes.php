@@ -52,3 +52,6 @@ $routes->get('historique', 'ClientController::historique');
 
 $routes->match(['GET', 'POST'], 'client/login', 'Client\Auth::login');
 $routes->get('client/logout', 'Client\Auth::logout');
+
+$routes->get('/operateur/dim', 'ConfigOperateur::changerDiminuation');
+$routes->match(['GET', 'POST'],'/operateur/diminuation', 'ConfigOperateur::updateDiminuation');

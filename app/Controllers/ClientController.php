@@ -178,8 +178,10 @@ class ClientController extends BaseController
                 if($pourcentage < 1) $pourcentage = 1;
                 $commission = $frais * ($pourcentage / 100);
                 $frais += $commission;
+            } else {
+                $diminuation = $this->utilisateurModel->getCommissionEntreOperateur();
+                $frais = $frais - ($frais * $diminuation / 100);
             }
-
             
             $total = $montant + $frais;
 

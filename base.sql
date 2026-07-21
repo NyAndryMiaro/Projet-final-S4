@@ -36,6 +36,11 @@ CREATE TABLE IF NOT EXISTS config_commission_inter_operateur (
     pourcentage REAL NOT NULL DEFAULT 0.0
 );
 
+CREATE TABLE IF NOT EXISTS config_commission_entre_operateur (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    pourcentage REAL NOT NULL DEFAULT 0.0
+);
+
 CREATE TABLE IF NOT EXISTS operation (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     id_type_operation INTEGER REFERENCES type_operation(id),
@@ -86,6 +91,7 @@ INSERT INTO prefixe_autre_operateur (nom_operateur, prefixe) VALUES
     ('Telma', '034');
 
 INSERT INTO config_commission_inter_operateur (pourcentage) VALUES (2.5);
+INSERT INTO config_commission_entre_operateur (pourcentage) VALUES (10.0);
 
 INSERT INTO utilisateur (numero, est_operateur, solde) VALUES
     ('0331234567', 0, 50000),

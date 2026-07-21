@@ -17,6 +17,7 @@
             <a class="nav-link" href="/operateur/prefixes">Préfixes Locaux</a>
             <a class="nav-link" href="/operateur/types">Types & Barèmes</a>
             <a class="nav-link" href="/operateur/comptes">Comptes clients</a>
+            <a class="nav-link" href="/operateur/dim">Modifier diminuation frais</a>
             <a class="nav-link" href="/">Déconnexion</a>
         </div>
     </div>

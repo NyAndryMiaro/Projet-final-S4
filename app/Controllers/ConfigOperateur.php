@@ -84,4 +84,24 @@ class ConfigOperateur extends BaseController
             return redirect()->back()->with('error', 'Impossible de supprimer ce préfixe.');
         }
     }
+
+    public function changerDiminuation() {
+        return view("/operateur/diminuation");
+    } 
+
+    function updateDiminuation() {
+        try {
+            $diminuation = $this->request->getPost('diminuation');
+            if($diminuation <= 0) {
+                return redirect()->back()->with('error', 'On ne peut pas entre des valeurs negativ ou null');
+            }
+            $db->query("UPDATE config_commission_entre_operateur SET POURCENTAGE = ?", [$diminuation]);
+            $db = \Config\Database::connect();
+
+            return wiew('operateur/diminuation');
+
+        } catch(Throwable $e) {
+
+        }
+    }
 }
