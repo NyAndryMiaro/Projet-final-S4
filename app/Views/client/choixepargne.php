@@ -15,20 +15,13 @@
 </nav>
 
 <div class="container">
-
-    <?php if (session()->getFlashdata('succes')) : ?>
-        <div class="alert alert-success"><?= esc(session()->getFlashdata('succes')) ?></div>
-    <?php endif ?>
-
-    <?php if (session()->getFlashdata('erreur')) : ?>
-        <div class="alert alert-danger"><?= esc(session()->getFlashdata('erreur')) ?></div>
-    <?php endif ?>
-
     <div class="card text-center mb-4 shadow-sm">
+        <h1>Pourcentage actuel : <?php if($test){echo "Non configure";}else{echo $pourcentage+"%" ;} ?> </h1>
         <div class="card-body">
-            <h5> Solde actuel : <?= esc($solde ?? 0) ?> Ar</h5>
-            <p class="text-muted">Numéro de téléphone : <?= esc($numero ?? 'Non spécifié') ?></p>
-            <p class="text-muted">Solde disponible</p>
+            <form action="/client/updateEpargne" method="post">
+                <input type="number" name="montant" id="" min=0 max=100>
+                <input type="submit" value="Choisir ce pourcentage">
+            </form>
         </div>
     </div>
 
@@ -44,9 +37,6 @@
         </div>
         <div class="col-6 col-md-3">
             <a href="/historique" class="btn btn-secondary w-100 py-3">Historique</a>
-        </div>
-        <div class="col-6 col-md-3">
-            <a href="/choixEpargne" class="btn btn-secondary w-100 py-3">Choisir une epargne</a>
         </div>
     </div>
 

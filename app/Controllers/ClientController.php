@@ -7,6 +7,8 @@ use App\Models\OperationModel;
 use App\Models\TypeOperationModel;
 use App\Models\UtilisateurModel;
 use App\Models\PrefixeOperateurModel;
+use App\Models\ChoixEpargne;
+use App\Models\EpargneModel;
 
 class ClientController extends BaseController
 {
@@ -15,6 +17,8 @@ class ClientController extends BaseController
     protected BaremeModel $baremeModel;
     protected UtilisateurModel $utilisateurModel;
     protected PrefixeOperateurModel $prefixeModel;
+    protected ChoixEpargne $choixepargnemodel;
+    protected EpargneModel $epargnemodel;
 
     public function __construct()
     {
@@ -23,6 +27,8 @@ class ClientController extends BaseController
         $this->baremeModel        = new BaremeModel();
         $this->utilisateurModel   = new UtilisateurModel();
         $this->prefixeModel       = new PrefixeOperateurModel();
+        $this->epargnemodel = new EpargneModel();
+        $this->choixepargnemodel = new ChoixEpargne();
     }
 
     private function idUtilisateurConnecte(): int
@@ -58,6 +64,7 @@ class ClientController extends BaseController
         return view('client/dashboard', [
             'solde'  => $solde ?? 0,
             'numero' => session()->get('numero'),
+            'idUtilisateur' => $idUtilisateur
         ]);
     }
 
@@ -330,4 +337,33 @@ class ClientController extends BaseController
             'idUtilisateur' => $idUtilisateur,
         ]);
     }
-}
+
+    public function updateEpargne(){
+        $pourcentageEpargne = $this->choixepargnemodel->getPourcentage($this->idUtilisateurConnecte());
+        if($pourcentageEpargne != null){
+        return view(
+            'client/choixepargne', [ 'pourcentage' => $pourcentageEpargne]
+        );
+        }else{
+        return view(
+            'client/choixepargne', [ 'test' => 'erreur']
+        );
+        }
+    }
+    public function updatedEpargne($montant){
+        $montant = (float) $this->request->getPost('montant');
+        if($montant){
+                $pourcentageEpargne = $this->choixepargnemodel->getPourcentage($this->idUtilisateurConnecte());
+        if($pourcentageEpargne != null){
+        return view(
+            'client/choixepargne', [ 'pourcentage' => $pourcentageEpargne]
+        );
+        }else{
+            $this->choixepargnemodel->insert(['pourcentage', $montant]);
+                    $pourcentageEpargne = $this->choixepargnemodel->getPourcentage($this->idUtilisateurConnecte());
+        if($pourcentageEpargne != null){
+        return view(
+            'client/choixepargne', [ 'pourcentage' => $pourcentageEpargne]
+        );
+        }}}
+}}

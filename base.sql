@@ -49,6 +49,18 @@ CREATE TABLE IF NOT EXISTS operation (
     date_operation DATETIME DEFAULT (datetime('now', 'localtime'))
 );
 
+CREATE TABLE IF NOT EXISTS choix_epargne(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_utilisateur INTEGER REFERENCES utilisateur(id),
+    pourcentage REAL NOT NULL DEFAULT 0.0
+);
+
+CREATE TABLE IF NOT EXISTS epargne(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_utilisateur INTEGER REFERENCES utilisateur(id),
+    valeur REAL NOT NULL
+);
+
 INSERT INTO type_operation (id, nom) VALUES 
     (1, 'dépôt'), 
     (2, 'retrait'), 
